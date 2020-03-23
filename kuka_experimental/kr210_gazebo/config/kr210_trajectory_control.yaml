@@ -1,0 +1,19 @@
+kr210:
+  kr210_joint_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+        - joint_a1
+        - joint_a2
+        - joint_a3
+        - joint_a4
+        - joint_a5
+        - joint_a6
+
+    gains:
+      joint_a1:   {p: 100, i: 100, d: 500, i_clamp: 0.0}
+      joint_a2:   {p: 100, i: 100, d: 2000, i_clamp: 0.0}
+      joint_a3:   {p: 100, i: 50, d: 1000, i_clamp: 0.0}
+      joint_a4:   {p: 100, i: 50, d: 200, i_clamp: 0.0}
+      joint_a5:   {p: 100, i: 50, d: 70, i_clamp: 0.0}
+      joint_a6:   {p: 100, i: 50, d: 70, i_clamp: 0.0}
+

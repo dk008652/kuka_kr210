@@ -1,0 +1,7 @@
+<launch>
+	<rosparam file="$(find kr210_gazebo)/config/kr210_trajectory_control.yaml" command="load"/>
+
+  <node name="trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/kuka_kr210" args="kr210_joint_controller"/>
+
+</launch>
